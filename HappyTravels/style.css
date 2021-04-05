@@ -1,0 +1,266 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body{
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+margin: 0;
+line-height: 1.5;
+background-color: #FAFAFA;
+}
+
+.box{
+width: 100%;
+padding: 0 20px 20px 20px;
+margin: 0 auto;
+}
+
+.traveler {
+width: 350px;
+margin: 60px auto 39.5px auto;
+}
+
+.pruh{
+width: 60px;
+border-top: 2px solid#407BFF;
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+
+}
+
+h1{
+font-size: 28px;
+/* když dám font-weight: 500; tak to nevypadá, jako výsledek, ale je to tenčí */
+margin-top: 0;
+margin-bottom: 0;
+}
+
+h2{
+font-size: 16px;
+margin-bottom: 17px;
+margin-top: 0;
+
+/* když dám font-weight: 500; tak to nevypadá, jako výsledek, ale je to tenčí */
+}
+
+
+p{
+font-weight: 300;
+color: #8B8B8B;
+margin:0;
+}
+
+.ck-prvni, .ck-druhy, .ck-treti, .del-prvni, .del-druhy, .del-treti p{
+font-size: 13px;
+}
+
+.main-text, .text-ck, .text-del p{
+font-size: 16px;
+}
+
+.button a{
+font-size: 14px;
+font-weight: 400;
+text-decoration: none;
+display: block;
+}
+
+
+.dobrodruzstvi{
+background-color: #407BFF;
+color: white;
+padding: 11px 30px;
+border-radius: 20px;
+margin: 30px auto 10px auto;
+width: 100%;
+max-width: 195px;
+
+}
+
+.plaz{
+background-color: #8B8B8B;
+color: white;
+padding: 11px 30px;
+border-radius: 20px;
+margin: 0 auto 60px auto;
+width: 100%;
+max-width: 221px;
+}
+
+.ck-prvni, .ck-druhy, .ck-treti, .del-prvni, .del-druhy, .del-treti{
+box-shadow: 0 4px 6px #407BFF1F;
+padding: 20px;
+background-color: #FFFFFF;
+border-radius: 10px;
+display:flex;
+align-items:center;
+width: 100%;
+max-width: 460px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.ck-prvni, .ck-druhy, .del-prvni, .del-druhy {
+margin-bottom: 15px;
+}
+
+.nabidka-ck, .nabidka-delegat{
+margin-top: 28px;
+margin-bottom: 60px;
+}
+
+
+.ikona{
+padding-right: 24px;
+}
+
+@media screen and (min-width:640px){
+
+.traveler {
+margin-bottom: 30px;}
+
+.button a{
+display: inline-block;
+}
+
+.button{
+margin-top: 30px;
+}
+    
+.dobrodruzstvi, .plaz{
+margin: 0;
+}
+
+.dobrodruzstvi{
+margin-right: 20px;
+}
+
+.nabidka-ck{
+margin-bottom: 80px;
+}
+
+.sluzby-ck{
+margin-top: 90px;
+}
+
+.nabidka-ck, .nabidka-delegat{
+display:flex;
+/*justify-content: space-between;*/
+margin-top: 40px;
+width: 100%;
+}
+
+.ck-prvni, .ck-druhy, .ck-treti, .del-prvni, .del-druhy, .del-treti
+{
+display: block;
+flex: 1 1 calc((100% - 40px) / 3);
+height: 172px;
+width: 230px;
+padding-top: 0;
+padding-bottom: 21px;
+text-align: center;
+}
+
+
+.ikona{
+padding: 40px 0 20px 0;
+}
+
+.ck-prvni, .ck-druhy, .del-prvni, .del-druhy {
+margin-bottom: 0;
+}
+
+.ck-druhy, .del-druhy {
+margin: 0 20px;
+}
+
+.ck-prvni, .ck-treti, .del-prvni, .del-treti{
+margin-left: 0;
+margin-right: 0;
+}
+
+
+}
+
+@media screen and (min-width:1100px){
+
+.main-part{
+display: flex;
+align-items: center;
+}
+
+.traveler{
+width: 100%;
+max-width: 425px;
+margin-bottom: 0;
+}
+
+.main-pic, .main-text{
+flex: 0 0 50%;
+}
+
+.main-pic{
+order: 1;
+}
+
+.box{
+max-width: 1040px;
+padding: 0;
+}
+
+.pruh{  
+margin-left: 0;
+}
+
+
+.sluzby-ck, .sluzby-delegat{
+display: flex;
+align-items: center;
+margin-top: 80px;
+}
+
+.nabidka-ck, .nabidka-delegat {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.sluzby-delegat{
+margin-bottom: 60px;
+}
+
+.text-ck{
+order: 1;
+text-align: left;
+width: 430px;
+}
+
+.text-del{
+width: 430px;
+}
+
+.text-del, .main-text{
+text-align: left;
+}
+
+.nabidka-ck{
+margin-right: 60px;
+width: 550px;
+}
+
+.nabidka-delegat{
+margin-left: 60px;
+width: 550px;
+}
+
+.ck-druhy, .del-druhy {
+margin: 0 20px;
+}
+
+.ck-prvni, .ck-druhy, .ck-treti, .del-prvni, .del-druhy, .del-treti{
+padding: 0 15px 40px 15px;
+height: 190px;
+width:170px;
+}
+}
